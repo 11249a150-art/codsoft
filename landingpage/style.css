@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #E6E6FA;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.contanier{
+   color:white;
+   background-color: rgb(37, 37, 37);
+   position: fixed;
+   top: 0px;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   padding:5px;
+   
+}
+.contanier a{
+    margin: 5px;
+    z-index: 2;
+}
+.contanier img{
+    margin-right: auto;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+}
+a:hover{
+    background-color: white;
+    
+    
+}
+.about{
+    width: 100%;
+    margin-top: 65px;
+    background-color: #E6E6FA;
+    padding: 10px;
+    border: solid white 1px;
+}
+.about h1{
+  text-transform: uppercase;
+  margin-top: 150px;
+  text-align: center;
+}
+.about h4{
+    margin-top: 150px;
+    text-align: right;
+    text-transform: uppercase;
+}
+.about h5{
+    text-align: right;
+    text-transform: uppercase;
+}
+.about p{
+    margin-top: 80px;
+    font-size:18px;
+    font-weight:10%;
+}
+p::first-letter{
+    text-transform: uppercase;
+}
+.foods{
+    margin-top: 35px;
+}
+.foods h1{
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.menu-box{
+    display:flex;
+    justify-content: space-around;
+    gap:30px;
+    flex-wrap: wrap;
+}
+.menu-box h2{
+text-transform: uppercase; 
+
+}
+.menu-box li{
+    margin-top: 20px;
+    font-size: 18px;
+}
+li::first-letter{
+    text-transform: uppercase;
+}
+li:hover{
+    color: palevioletred;
+}
+
+
+.food-gallery{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card img{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.buttons{
+    margin-top: 10px;
+}
+
+.buttons button{
+    padding: 8px 15px;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background: black;
+    color: white;
+}
+
+.buttons button:hover{
+    background: orange;
+}
+
+.img {
+    width:200px;
+    height:200px;
+    border-radius:15px;
+    transition: all 0.4s ease;
+    cursor:pointer;
+}
+
+.card:hover{
+    transform: scale(1.05) translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+}
+
+.contact-us {
+    margin-top: 50px;
+    text-align: center;
+}
