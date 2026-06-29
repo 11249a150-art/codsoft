@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Calculator</title>
+    <style>
+        body{
+            font-family: Arial;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .box{
+            width: 220px;
+            margin: auto;
+            padding: 15px;
+            border: 1px solid black;
+        }
+
+        input{
+            width: 200px;
+            height: 30px;
+            margin-bottom: 10px;
+            font-size: 20px;
+            text-align: right;
+        }
+
+        button{
+            width: 45px;
+            height: 45px;
+            margin: 3px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="box">
+
+<input type="text" id="screen" readonly>
+
+<br>
+
+<button onclick="addValue('7')">7</button>
+<button onclick="addValue('8')">8</button>
+<button onclick="addValue('9')">9</button>
+<button onclick="addValue('/')">/</button>
+
+<br>
+
+<button onclick="addValue('4')">4</button>
+<button onclick="addValue('5')">5</button>
+<button onclick="addValue('6')">6</button>
+<button onclick="addValue('*')">*</button>
+
+<br>
+
+<button onclick="addValue('1')">1</button>
+<button onclick="addValue('2')">2</button>
+<button onclick="addValue('3')">3</button>
+<button onclick="addValue('-')">-</button>
+
+<br>
+
+<button onclick="addValue('0')">0</button>
+<button onclick="addValue('.')">.</button>
+<button onclick="answer()">=</button>
+<button onclick="addValue('+')">+</button>
+
+<br><br>
+
+<button onclick="clearScreen()" style="width:200px;">Clear</button>
+
+</div>
+
+<script>
+
+let screen = document.getElementById("screen");
+
+function addValue(value){
+    screen.value = screen.value + value;
+}
+
+function answer(){
+    screen.value = eval(screen.value);
+}
+
+function clearScreen(){
+    screen.value = "";
+}
+
+</script>
+
+</body>
+</html>
